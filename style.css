@@ -1,0 +1,160 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+  }
+  
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  #search-bar {
+    padding: 5px;
+    font-size: 1em;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  #nav-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+  }
+  
+  #nav-menu li {
+    margin: 5px 0;
+    margin-left: 30px;
+  }
+  
+  #nav-menu li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #hamburger-menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .page.hidden {
+    display: none;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    position: relative;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+ #pagination {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+  }
+
+
+  /* Center the registration form */
+#registration-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f8f9fa; /* Optional: add a light background */
+  }
+  
+  #employee-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds space between form elements */
+  }
+  
+  #employee-form label {
+    font-weight: bold;
+  }
+  
+  #employee-form input, #employee-form textarea, #employee-form button {
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #employee-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+  }
+  
+  #employee-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (min-width: 768px) {
+    #nav-menu {
+      display: flex;
+    }
+    #hamburger-menu {
+      display: none;
+    }
+  }
+  
